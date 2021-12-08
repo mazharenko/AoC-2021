@@ -12,3 +12,7 @@ module Array2D =
 let displayPipe x =
     x |> display |> ignore
     x
+
+let splitToTuple2 (separators : string array) (s : string) =
+    let split = s.Split(separators, StringSplitOptions.RemoveEmptyEntries)
+    split[0], split[1]
