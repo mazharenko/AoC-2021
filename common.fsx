@@ -8,6 +8,14 @@ module String =
 module Array2D =
     let toArray (source: 'T[,]) =
         source |> Seq.cast<'T> |> Seq.toArray
+    let toJagged (source: 'T[,]) = 
+        [|
+            for i in (Array2D.base1 source)..(Array2D.length1 source - 1) do
+                yield [|
+                    for j in (Array2D.base2 source)..(Array2D.length2 source - 1) do
+                        yield source.[i,j]
+            |]
+        |]
     
 let readLines (input: string): string[] =
     input.Split([|'\n'; '\r'|], StringSplitOptions.RemoveEmptyEntries) 
