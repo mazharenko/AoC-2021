@@ -53,7 +53,7 @@ RUN dotnet_sdk_version=6.0.100 \
   && dotnet help
 
 # Copy notebooks
-COPY ./day09 ${HOME}/Notebooks/
+COPY ./notebooks ${HOME}/Notebooks/
 
 # Add package sources
 RUN echo "\
@@ -69,7 +69,6 @@ RUN echo "\
   <add key=\"dotnet-tools\" value=\"https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json\" />\
   <add key=\"dotnet-libraries\" value=\"https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-libraries/nuget/v3/index.json\" />\
   <add key=\"dotnet5\" value=\"https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json\" />\
-  <add key=\"MachineLearning\" value=\"https://pkgs.dev.azure.com/dnceng/public/_packaging/MachineLearning/nuget/v3/index.json\" />\
   </packageSources>\
   <disabledPackageSources />\
   </configuration>\
