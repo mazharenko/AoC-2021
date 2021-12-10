@@ -4,6 +4,12 @@ module common
 module String =
     let fromArray (ar:char[]) = 
         new string(ar)
+
+module Result =
+    let failIfError =
+        function 
+        | Ok x -> x
+        | Error error -> failwith (error.ToString())
         
 module Array2D =
     let toArray (source: 'T[,]) =
