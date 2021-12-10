@@ -16,6 +16,10 @@ module Array2D =
                         yield source.[i,j]
             |]
         |]
+
+module Array = 
+    let median (source: 'a[]) =
+        (Array.sort source).[source.Length / 2]
     
 let readLines (input: string): string[] =
     input.Split([|'\n'; '\r'|], StringSplitOptions.RemoveEmptyEntries) 
