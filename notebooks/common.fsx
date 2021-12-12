@@ -40,4 +40,4 @@ let displayPipe x =
 
 let splitToTuple2 (separators : string array) (s : string) =
     let split = s.Split(separators, StringSplitOptions.RemoveEmptyEntries)
-    split[0], split[1]
+    split.[0], split.[1]
