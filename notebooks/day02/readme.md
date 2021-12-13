@@ -1,5 +1,8 @@
 ### Day 2: Dive!
-[link](https://adventofcode.com/2021/day/2)
+
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mazharenko/AoC-2021/tree/HEAD/notebooks/day02)
+
+[Problem statement](https://adventofcode.com/2021/day/2)
 
 Actually, the input format might be a valid F# code.
 ```fsharp
