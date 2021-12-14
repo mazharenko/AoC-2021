@@ -23,10 +23,15 @@ module Array2D =
             |]
         |]
 
+module Seq = 
+    let group keySelector valueSelector source = 
+        source |> Seq.groupBy keySelector 
+        |> Seq.map (fun (key, entries) -> key, valueSelector entries)
+
 module Array = 
     let median (source: 'a[]) =
         (Array.sort source).[source.Length / 2]
-    
+
 let readLines (input: string): string[] =
     input.Split([|'\n'; '\r'|], StringSplitOptions.RemoveEmptyEntries) 
 
