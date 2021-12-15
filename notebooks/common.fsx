@@ -22,6 +22,13 @@ module Array2D =
                         yield source.[i,j]
             |]
         |]
+    let tryGet i j source =
+        if (i >= Array2D.base1 source 
+            && j >= Array2D.base2 source 
+            && i < Array2D.length1 source 
+            && j < Array2D.length2 source)
+        then Some source.[i,j]
+        else None
 
 module Seq = 
     let group keySelector valueSelector source = 
