@@ -31,9 +31,20 @@ module Array2D =
         else None
 
 module Seq = 
+    open System.Collections.Generic
+    
     let group keySelector valueSelector source = 
         source |> Seq.groupBy keySelector 
         |> Seq.map (fun (key, entries) -> key, valueSelector entries)
+        
+    let takeUntil predicate (s:seq<_>) = 
+        let rec loop (en:IEnumerator<_>) = seq {
+            if en.MoveNext() then
+              yield en.Current
+              if not (predicate en.Current) then
+                yield! loop en }
+        seq { use en = s.GetEnumerator()
+            yield! loop en }
 
 module Array = 
     let median (source: 'a[]) =
