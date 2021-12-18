@@ -64,3 +64,7 @@ let displayPipe x =
 let splitToTuple2 (separators : string array) (s : string) =
     let split = s.Split(separators, StringSplitOptions.RemoveEmptyEntries)
     split.[0], split.[1]
+
+
+let (|BetweenInclusive|_|) min max x =
+    if min <= x && x <= max then Some () else None
