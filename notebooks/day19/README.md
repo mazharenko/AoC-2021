@@ -1,6 +1,8 @@
 # Day 19: Beacon Scanner
 
+Solution in a notebook: [puzzle.ipynb](puzzle.ipynb)
 
+Also in nbviewer:\
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mazharenko/AoC-2021/tree/HEAD/notebooks/day19/puzzle.ipynb)
 
 [https://adventofcode.com/2021/day/19](https://adventofcode.com/2021/day/19)
