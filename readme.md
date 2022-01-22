@@ -2,4 +2,4 @@
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mazharenko/AoC-2021/tree/HEAD/notebooks/)
 
-[Advent Of Code 2021](https://adventofcode.com/2021) in F# with .NET Interactive notebooks
+[Advent Of Code 2021](https://adventofcode.com/2021) in F&sharp; with .NET Interactive notebooks
