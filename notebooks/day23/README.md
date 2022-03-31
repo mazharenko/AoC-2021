@@ -1,11 +1,17 @@
+[nb badge]: https://img.shields.io/badge/jupyter-%23FA0F00.svg?logo=jupyter&logoColor=white
+[nbviewer badge]: https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg
+[nb]: https://nbviewer.org/github/mazharenko/AoC-2021/tree/HEAD/notebooks/day23/puzzle.ipynb
+
 # Day 23: Amphipod
 
-Solution in a notebook: [puzzle.ipynb](puzzle.ipynb)
-
-Also in nbviewer:\
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mazharenko/AoC-2021/tree/HEAD/notebooks/day23/puzzle.ipynb)
 
 [https://adventofcode.com/2021/day/23](https://adventofcode.com/2021/day/23)
+
+
+|          | Notebook                              | Also in nbviewer                  |
+| -------- | ------------------------------------- | --------------------------------- |
+| Solution | [![notebook][nb badge]](puzzle.ipynb) | [![nbviewer][nbviewer badge]][nb] |
+
 
 ## Description
 
